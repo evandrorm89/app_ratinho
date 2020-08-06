@@ -11,18 +11,24 @@
             padding: 10, 10
             spacing: 20, 20
             RelativeLayout:
+                cols: 1
                 Button:
                     text: "PORRADA"
                     color: 1, 1, 0.5, 1
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('porrada')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    #width: .25
+                    allow_stretch: True
+                    font_size: '12dp'
                     text_size: (220, 90)
+                    height: self.texture_size[1]
                     halign: 'center'
-                    #valign: 'bottom'
-                    #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    valign: 'bottom'
+                    padding_y: 5
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Parabens pro Papai"
@@ -30,12 +36,16 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('parabens_papai')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    #allow_stretch: True
+                    font_size: '12dp'
                     text_size: (220, 90)
+                    height: self.texture_size[1]
                     halign: 'center'
-                    #valign: 'bottom'
-                    #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    valign: 'bottom'
+                    padding_y: 5
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Ele não é o pai"
@@ -43,12 +53,15 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('nao_eh_o_pai')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
+                    height: self.texture_size[1]
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "IRRA"
@@ -56,12 +69,15 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('IRRA')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
+                    height: self.texture_size[1]
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "UEPA"
@@ -69,12 +85,15 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('UEPA')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
+                    height: self.texture_size[1]
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Esse é meu patrão"
@@ -82,12 +101,15 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('esse_meu_patrao')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
+                    height: self.texture_size[1]
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "RATINHO"
@@ -95,12 +117,15 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('RATINHO')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
+                    height: self.texture_size[1]
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Vai Sombra"
@@ -108,12 +133,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('vai_sombra')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Rapaiz"
@@ -121,12 +148,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('rapaz')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Cavalo"
@@ -134,12 +163,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('cavalo')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Que isso meu filho"
@@ -147,12 +178,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('que_isso_meu_filho')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Isto non ecziste"
@@ -160,12 +193,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('isto_non_ecziste')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "PARE"
@@ -173,12 +208,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('pare')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Tarzan"
@@ -186,12 +223,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('tarzan')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "AEEITAA"
@@ -199,12 +238,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('AEITA')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Nunca vi tanto viado"
@@ -212,12 +253,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('tanto_viado')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "Que viadão bonito hein"
@@ -225,12 +268,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('que_viadao_bonito')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
             RelativeLayout:
                 Button:
                     text: "RRR"
@@ -238,12 +283,14 @@
                     background_normal: 'images/button_normal.png'
                     background_down: 'images/button_pressed.png'
                     on_press: root.play('gr')
-                    size_hint: .55, .35
+                    size_hint_x: 0.3
+                    border: (0, 0, 0, 0)
+                    font_size: '12dp'
                     text_size: (220, 90)
                     halign: 'center'
                     #valign: 'bottom'
                     #padding_y: 5
-                    pos_hint: {'x': 0.2, 'y': 0.5}
+                    pos_hint: {'x': 0.3}
 
 
 

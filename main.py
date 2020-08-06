@@ -26,13 +26,15 @@ class InitialScreen(Screen):
     sound = ObjectProperty(None, allownone=True)
 
     def play(self, filename):
+        #stop sound if it's playing
+        if self.sound is not None:
+            self.sound.stop()
+        
         path = ('sounds/{}.wav'.format(filename))
         self.sound = SoundLoader.load(path)
         
-        #stop sound if it's playing
-        if self.sound.status != 'stop':
-            self.sound.stop()
-        self.sound.play()
+        if self.sound:
+            self.sound.play()
 
 
 
